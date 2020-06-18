@@ -103,7 +103,7 @@ $(function(){
          $('#telegram').on('blur', function(){
            var string = $(this).val();
            if (!string.match(/^https?:/) && string.length) {
-             string = "https://teleg.run/" + string;
+             string = "https://t.me/" + string;
               $(this).val(string)
            }
          });
