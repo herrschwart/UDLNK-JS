@@ -51,11 +51,11 @@ var myAutocomplete = autocomplete('#search-input', {hint: false}, [
       $('#website').prop('disabled', true);
       $('#people')[0].value = suggestion.people;
       $('#people').prop('disabled', true);
-      $('#city')[0].value = suggestion.city;
-      $('#city').prop('disabled', true);
+      $('#descID')[0].value = suggestion.shortdesc;
+      $('#descID').prop('disabled', true);
 
       $('#reset-form').click(function(){
-      $('#website, #city, #people').prop('disabled', false);});
+      $('#website, #descID, #people').prop('disabled', false);});
     });
 
   document.querySelector(".reset-form").addEventListener("click", function() {
