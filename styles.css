@@ -1,0 +1,61 @@
+
+/* add custom cursor */
+.typed-words::after {
+  content: "|";
+  display: inline;
+  animation: blink 1s infinite;
+}
+
+/* custom cursor animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.list-company-logo {
+ 	mix-blend-mode: darken;
+}
+
+.warning {
+	border-color: #ffa41d;
+}
+
+.reset-form {
+		border: 0;
+    cursor: pointer;
+    -webkit-appearance: button;
+    position: absolute;
+    left: auto;
+		width: 27px;
+		height: 27px;
+    right: 5%;
+    background-image: url('https://uploads-ssl.webflow.com/5e906833c9af5c4ca3efbb11/5ecd43f7a85db2a24f7fe867_reset.svg');
+    background-size: cover;
+    top: 15%;
+    background-color: #fafafc;
+}
+
+
+
+  input.input-box, textarea { background: #fafafc; color: black; }
+.w-input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #adbfc5;
+}
+.w-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #adbfc5;
+    opacity: 1;
+}
+.w-input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #adbfc5;
+    opacity: 1;
+}
+.w-input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #adbfc5;
+}
